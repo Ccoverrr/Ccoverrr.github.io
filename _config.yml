@@ -1,0 +1,34 @@
+#
+# 个人网站配置 - Modern Resume Theme
+#
+remote_theme: sproogen/modern-resume-theme
+
+# 网站基本信息
+title: 张语桐 | Yutong Zhang
+description: 深圳大学金融科技专业 · 个人简历与项目展示
+
+# 社交链接
+github_username: Ccoverrr
+email: 3160269481@qq.com
+
+# Google Analytics（可选）
+google_analytics:
+
+# 主题设置
+show_downloads: false
+
+# 构建配置
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# 不包含的文件
+exclude:
+  - docs/
+  - report/
+  - screenshots/
+  - README.md
+  - Gemfile
+  - Gemfile.lock

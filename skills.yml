@@ -1,0 +1,18 @@
+- category: 语言能力
+  skills:
+    - name: 英语六级（CET-6）
+      level: 熟练
+    - name: 英文资料阅读
+      level: 良好
+- category: 专业能力
+  skills:
+    - name: 文案写作
+      level: 熟练
+    - name: 信息提炼与文书撰写
+      level: 熟练
+    - name: Office 办公
+      level: 熟练
+- category: 新媒体
+  skills:
+    - name: 内容编辑与策划
+      level: 基础
