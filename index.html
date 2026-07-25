@@ -2,79 +2,117 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>张语桐 | Yutong Zhang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#333;line-height:1.7;background:#f4f6f9}
-.w{max-width:960px;margin:0 auto;padding:32px 20px}
-.h{background:linear-gradient(135deg,#1a365d,#2563eb);color:#fff;border-radius:16px;padding:56px 40px;text-align:center}
-.h h1{font-size:2.6em;font-weight:700}
-.h h1 span{font-weight:300}
-.h .sub{font-size:1.15em;margin-top:10px;opacity:.9}
-.c{background:#fff;border-radius:12px;padding:36px;margin-top:20px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.c h2{font-size:1.25em;color:#1a365d;border-bottom:2px solid #e2e8f0;padding-bottom:10px;margin-bottom:20px}
-.ei{margin-bottom:14px}
-.ei h3{font-size:1.08em;color:#2563eb}
-.ei .m{color:#718096;font-size:.88em;margin:2px 0 6px}
-.ei p{color:#4a5568}
-.sg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.sh3{font-size:.97em;color:#1a365d;margin-bottom:8px;font-weight:600}
-.st{display:inline-block;background:#eef2f6;color:#2563eb;padding:4px 14px;border-radius:20px;margin:3px 4px}
-.x{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #edf2f7}
-.x:last-child{border:none}
-.x h3{font-size:1.05em;color:#2563eb}
-.x .m{color:#718096;font-size:.88em}
-.x ul{color:#4a5568;padding-left:20px}
-.al{display:flex;flex-direction:column;gap:8px}
-.ai{display:flex;align-items:baseline;gap:10px;color:#4a5568}
-.ai .d{width:6px;height:6px;background:#2563eb;border-radius:50%;flex-shrink:0;margin-top:9px}
-.ct{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;padding:4px 0}
-.ct a{color:#2563eb;text-decoration:none;font-weight:500}
-@media(max-width:640px){.w{padding:16px 12px}.h{padding:36px 20px}.h h1{font-size:1.8em}.c{padding:20px 16px}.sg{grid-template-columns:1fr}.ct{flex-direction:column;align-items:center;gap:16px}}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, sans-serif; color: #333; line-height: 1.7; background: #f5f7fa; }
+.page { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+.header { text-align: center; padding: 60px 0 40px; background: linear-gradient(135deg, #1a5276, #2a7ae2); color: #fff; border-radius: 12px 12px 0 0; margin-bottom: 0; }
+.header h1 { font-size: 2.4em; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 1.1em; opacity: 0.9; margin-top: 8px; }
+.card { background: #fff; border-radius: 12px; padding: 32px; margin-top: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.card h2 { font-size: 1.3em; color: #1a5276; border-bottom: 2px solid #e8edf2; padding-bottom: 10px; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+.card h2::before { content: ''; display: inline-block; width: 4px; height: 20px; background: #2a7ae2; border-radius: 2px; }
+.edu-item { margin-bottom: 16px; }
+.edu-item h3 { font-size: 1.05em; color: #2a7ae2; }
+.edu-item .meta { color: #666; font-size: 0.9em; margin: 2px 0 6px; }
+.edu-item p { color: #555; font-size: 0.95em; }
+.skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.skill-cat h3 { font-size: 1em; color: #1a5276; margin-bottom: 8px; }
+.skill-tag { display: inline-block; background: #eef3f8; color: #2a7ae2; padding: 4px 12px; border-radius: 20px; font-size: 0.88em; margin: 3px 4px 3px 0; }
+.exp-item { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid #f0f0f0; }
+.exp-item:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
+.exp-item h3 { font-size: 1.05em; color: #2a7ae2; }
+.exp-item .meta { color: #666; font-size: 0.9em; margin: 2px 0 8px; }
+.exp-item ul { padding-left: 20px; color: #555; font-size: 0.95em; }
+.exp-item li { margin-bottom: 4px; }
+.award-item { display: flex; align-items: baseline; gap: 8px; }
+.award-item .dot { width: 6px; height: 6px; background: #2a7ae2; border-radius: 50%; flex-shrink: 0; }
+.contact { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.contact a { color: #2a7ae2; text-decoration: none; font-weight: 500; }
+.contact a:hover { text-decoration: underline; }
+.footer { text-align: center; padding: 24px; color: #999; font-size: 0.85em; }
+@media (max-width: 640px) {
+  .header { padding: 40px 20px; }
+  .header h1 { font-size: 1.8em; }
+  .card { padding: 20px; }
+  .skill-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
-<div class="w">
-<div class="h"><h1>张语桐 <span>Yutong Zhang</span></h1>
-<div class="sub">深坟大学 · 金融科技(FinTech)本科在读</div></div>
-<div class="c"><h2>关于我</h2>
-<p>深坟大学金融科技专科生。具备扎实的金融学与计算机科学基础。做事严谨、学习能力强、沟通顺畅。在文案写作、信息提点与活动组织方面有丰富经验。</p></div>
-<div class="c"><h2>教育背景</h2>
-<div class="ei"><h3>深坟大学</h3>
-<div class="m">金融科技 / 本科 · 2024.09 - 至今</div>
-<p>主修课程：金融学、公司金融、国际会计学、管理学原理、微观经济学、宏观经济学、程序设计、数据结构、高等数学、线性代数、概率论与数理统计统计、商务英语</p>
-</div></div>
-<div class="c"><h2>技能证书</h2>
-<div class="sg">
-<div><div class="sh3">语言能力</div><span class="st">英语六级(CET-6)</span><span class="st">英文资料阅读</span></div>
-<div><div class="sh3">专业能力</div><span class="st">文案写作</span><span class="st">信息提点与文书搓写</span><span class="st">Office 办公</span></div>
-<div><div class="sh3">新媒体</div><span class="st">内容编辑与策划</span></div>
-</div></div>
-<div class="c"><h2>荣誉奖项</h2>
-<div class="al"><div class="ai"><span class="d"></span><span>深坟大学金融科技学院英语演讲比赛三等奖(2025)</span></div></div></div>
-<div class="c"><h2>实习经历</h2>
-<div class="x"><h3>研究员 · 第一上海创业投资管理有限公司</h3>
-<div class="m">2026.01 - 2026.02</div>
-<ul>
-<li>协助记录上市公司电话会议要点，提点核心信息，整理成规范文字材料</li>
-<li>协助搜集行业与公司资料，分类归档、数据核对，支持报告搓写</li>
-<li>参与财务模型基础搏建与研究报告初稿整理</li>
-</ul></div></div>
-<div class="c"><h2>校园经历</h2>
-<div class="x"><h3>团支书 · 金融科技2班</h3>
-<div class="m">2024.12 - 至今</div>
-<ul>
-<li>负责支部日常管理、活动组织与通知传达，保障各项工作高效落地</li>
-<li>搓写活动文案、宣传材料，策划并执行反诈宣传活动，提交提案获学院采纳</li>
-<li>担任学院与学生沟通桥桘，高效反馈意见</li>
-</ul></div></div>
-<div class="c"><h2>联系方式</h2>
-<div class="ct">
-<a href="mailto:3160269481@qq.com">✉ 3160269481@qq.com</a>
-<a href="https://github.com/Ccoverrr" target="_blank">&lt;/&gt; GitHub: Ccoverrr</a>
-</div></div>
-<div style="text-align:center;padding:28px 0 10px;color:#a0aec0;font-size:.82em">张语桐 · 深坟大学 · 2026</div>
+<div class="page">
+  <div class="header">
+    <h1>张语桐 <span style="font-weight:300">Yutong Zhang</span></h1>
+    <div class="subtitle">深圳大学 · 金融科技（FinTech）本科在读</div>
+  </div>
+
+  <div class="card">
+    <h2>关于我</h2>
+    <p style="color:#555">深圳大学金融科技专业本科生，具备扎实的金融学与计算机科学基础。做事严谨、学习能力强、沟通顺畅。在文案写作、信息提炼与活动组织方面有丰富经验。</p>
+  </div>
+
+  <div class="card">
+    <h2>教育背景</h2>
+    <div class="edu-item">
+      <h3>深圳大学</h3>
+      <div class="meta">金融科技 / 本科 · 2024.09 - 至今</div>
+      <p>主修课程：金融学、公司金融、国际会计学、管理学原理、微观经济学、宏观经济学、程序设计、数据结构、高等数学、线性代数、概率论与数理统计、商务英语</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>技能证书</h2>
+    <div class="skill-grid">
+      <div class="skill-cat"><h3>语言能力</h3><span class="skill-tag">英语六级（CET-6）</span><span class="skill-tag">英文资料阅读</span></div>
+      <div class="skill-cat"><h3>专业能力</h3><span class="skill-tag">文案写作</span><span class="skill-tag">信息提炼与文书撰写</span><span class="skill-tag">Office 办公</span></div>
+      <div class="skill-cat"><h3>新媒体</h3><span class="skill-tag">内容编辑与策划</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>荣誉奖项</h2>
+    <div class="award-item"><span class="dot"></span><span>深圳大学金融科技学院英语演讲比赛三等奖（2025）</span></div>
+  </div>
+
+  <div class="card">
+    <h2>实习经历</h2>
+    <div class="exp-item">
+      <h3>第一上海创业投资管理有限公司</h3>
+      <div class="meta">研究员 · 2026.01 - 2026.02</div>
+      <ul>
+        <li>协助记录上市公司电话会议要点，提炼核心信息，整理成规范文字材料</li>
+        <li>协助搜集行业与公司资料，分类归档、数据核对，支持报告撰写</li>
+        <li>参与财务模型基础搭建与研究报告初稿整理</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>校园经历</h2>
+    <div class="exp-item">
+      <h3>金融科技2班 团支书</h3>
+      <div class="meta">2024.12 - 至今</div>
+      <ul>
+        <li>负责支部日常管理、活动组织与通知传达，保障各项工作高效落地</li>
+        <li>撰写活动文案、宣传材料，策划并执行反诈宣传活动，提交提案获学院采纳</li>
+        <li>担任学院与学生沟通桥梁，高效反馈意见</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>联系方式</h2>
+    <div class="contact">
+      <a href="mailto:3160269481@qq.com">✉ 3160269481@qq.com</a>
+      <a href="https://github.com/Ccoverrr" target="_blank">GitHub: Ccoverrr</a>
+    </div>
+  </div>
+
+  <div class="footer">张语桐 · 2026</div>
 </div>
 </body>
 </html>
